@@ -30,26 +30,20 @@ header {
     border-bottom: $secondary-color 3px solid;
     background-color: $primary-color;
 
-    .menu-items li {
-      display: inline-flex;
-      height: 2.7em;
-      line-height: 2.5em;
+    .menu-items li a {
+      text-transform: uppercase;
+      font-size: 16px;
+      padding: 0 13px;
+      font-weight: bold;
+      color: $white-color !important;
+      border-right: $gray-color 1px solid;
 
-      a {
-        text-transform: uppercase;
-        font-size: 16px;
-        padding: 0 13px;
-        font-weight: bold;
-        color: $white-color !important;
-        border-right: $gray-color 1px solid;
-
-        &.is-active__menu,
-        &:hover {
-          background-color: $secondary-color;
-          transition: 0.5s;
-          color: $white-color;
-          text-decoration: none !important;
-        }
+      &.is-active__menu,
+      &:hover {
+        background-color: $secondary-color;
+        transition: 0.5s;
+        color: $white-color;
+        text-decoration: none !important;
       }
     }
 

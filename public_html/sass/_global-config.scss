@@ -53,6 +53,11 @@ a {
   flex-wrap: wrap;
   box-sizing: border-box;
 }
+.menu-items li {
+  display: inline-flex;
+  height: 2.7em;
+  line-height: 2.5em;
+}
 
 .styled-lst {
   list-style: none;
