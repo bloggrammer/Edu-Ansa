@@ -1,0 +1,21 @@
+Options +Includes 
+AddType text/html .html
+AddHandler server-parsed .html
+AddOutputFilter INCLUDES .html
+DirectoryIndex index.shtml index.html index.htm index.php
+
+#RewriteEngine On
+#RewriteBase /
+
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteRule .* ea-site/content/post/post-template.html [L]
+#http://httpd.apache.org/docs/2.0/misc/rewriteguide.html
+
+#Remove .html extension
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [NC,L]
+
+RewriteEngine On
+Redirect 301 /ea-site/john http://localhost/ea-site/content/post/post-template
