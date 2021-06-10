@@ -6,12 +6,17 @@ $gray-color: #888;
 $white-color: #fff;
 $black-color: #000;
 $hover-color: #e8491d;
+$required-color: #dd6666;
 $light-black: #2d2d2d;
 $dark-charcoal: #333;
 $chinese-silver: #ccc;
 $blue-romance: #d1d6ee;
 $surf-crest: #bbc1e1;
 $dodger-blue: #0075ff;
+$dove-gray: #666;
+$soft-orange: #fdb68a;
+$orange-color: #fc8236;
+$dark-gray: #222;
 $font-stack: 15px/1.5 Arial, Helvetica, sans-serif;
 
 body {
@@ -57,83 +62,4 @@ a {
   display: inline-flex;
   height: 2.7em;
   line-height: 2.5em;
-}
-
-.styled-lst {
-  list-style: none;
-  counter-reset: steps;
-  .styled-lst li {
-    counter-increment: steps;
-  }
-  &::before {
-    content: counter(steps);
-    margin-right: 0.5rem;
-    background: $primary-color;
-    color: $white-color;
-    width: 1.2em;
-    height: 1.2em;
-    border-radius: 50%;
-    display: inline-grid;
-    place-items: center;
-    line-height: 1.2em;
-  }
-}
-
-.v-line {
-  width: 2;
-  height: auto;
-  background-color: $gray-color;
-}
-.h-line {
-  background-color: $gray-color;
-}
-.post-title {
-  font-size: 2em;
-  color: $black-color;
-  text-align: center;
-}
-
-.ea-checkbox {
-  position: relative;
-  &-checkbox input,
-  &-checkbox svg {
-    width: 1em;
-    height: 1em;
-    display: block;
-  }
-  &-checkbox input {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    position: relative;
-    outline: none;
-    background: $white-color;
-    border: none;
-    margin: 0;
-    padding: 0;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: box-shadow 0.3s;
-    box-shadow: inset 0 0 0 var(--s, 1px) var(--b, var(--blue-romance));
-    &:hover {
-      --s: 2px;
-      --b: var(--surf-crest);
-    }
-    &:checked {
-      --b: var(--dodger-blue);
-    }
-  }
-  &-checkbox svg {
-    pointer-events: none;
-    fill: none;
-    stroke-width: 2px;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke: var(--eacheckbox-stroke, var(--dodger-blue));
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 1em;
-    height: 1em;
-    transform: scale(var(--eacheck-scale, 1)) translateZ(0);
-  }
 }

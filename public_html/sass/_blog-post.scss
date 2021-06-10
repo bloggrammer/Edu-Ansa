@@ -1,0 +1,16 @@
+.b-post {
+  justify-content: space-between;
+  box-sizing: inherit;
+  #post {
+    flex: 1;
+    > section {
+      margin: 8px;
+    }
+    span {
+      position: relative;
+      top: 2px;
+      left: 320px;
+      font-size: 12px !important;
+    }
+  }
+}
