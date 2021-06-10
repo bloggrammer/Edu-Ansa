@@ -20,6 +20,6 @@ _Site Footer with Secondary Navigation_
 
 _Site Home page_
 
-![blog post template](docs/BlogTemplate.PNG)
+![blog post template](docs/BlogTemplate.png)
 
 _Site Home page_
