@@ -11,16 +11,16 @@
     />
   </div>
 
-  <div class="f-wrapper header-bottom">
-    <nav class="header-bottom__nav">
+  <div class="f-wrapper header-nav">
+    <nav id="pri-nav">
       <ul class="f-wrapper menu-items">
         <li>
-          <a class="is-active__menu" href="/public_html/index.html">Home</a>
+          <a href="index.html">Home</a>
         </li>
         <li><a href="post-template.html">Blog</a></li>
-        <li><a href="">Resources</a></li>
-        <li><a href="about.html">Products</a></li>
-        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="#">Resources</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">FAQ</a></li>
       </ul>
     </nav>
     <div class="f-wrapper site-search">
@@ -78,4 +78,31 @@
       </ul>
     </nav>
   </div>
+  <script>
+    var items = document.querySelectorAll("a");
+    items.forEach((item) => {
+      item.addEventListener("click", function () {
+        items.forEach((itm) => itm.classList.remove("active-menu"));
+        this.classList.add("active-menu");
+      });
+    });
+
+    // document.addEventListener("DOMContentLoaded", function (event) {
+    //   var element = document.getElementById("pri-nav").querySelectorAll("a");
+    //   if (element) {
+    //     element.forEach(function (el, key) {
+    //       el.addEventListener("click", function () {
+    //         console.log(key);
+    //         el.classList.toggle("active-menu");
+    //         element.forEach(function (ell, els) {
+    //           if (key !== els) {
+    //             ell.classList.remove("active-menu");
+    //           }
+    //           console.log(els);
+    //         });
+    //       });
+    //     });
+    //   }
+    // });
+  </script>
 </header>
