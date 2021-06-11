@@ -1,4 +1,4 @@
-# NAMING CONVENTIONS
+# Server Side Documentation
 
-## CSS Class Names
-- f-wrapper : *f* flex
+## Technology
+- MEN stack
