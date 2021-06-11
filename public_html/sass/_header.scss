@@ -23,7 +23,8 @@ header {
       margin-top: 6px;
     }
   }
-  .header-bottom {
+
+  .header-nav {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
@@ -38,7 +39,7 @@ header {
       color: $white-color !important;
       border-right: $gray-color 1px solid;
 
-      &.is-active__menu,
+      &.active-menu,
       &:hover {
         background-color: $secondary-color;
         transition: 0.5s;

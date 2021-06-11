@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .menu-items li a {
+        text-transform: uppercase;
+        font-size: 16px;
+        padding: 0 13px;
+        font-weight: bold;
+      }
+
+      .menu-items li a.active-menu,
+      .menu-items li a:hover {
+        background-color: black;
+        transition: 0.5s;
+        color: white;
+        text-decoration: none !important;
+      }
+    </style>
+    >
+  </head>
+  <body>
+    <header class="f-wrapper">
+      <nav id="pri-nav">
+        <ul class="f-wrapper menu-items">
+          <li>
+            <a href="#" class="active-menu">Home</a>
+          </li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Resources</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </nav>
+      <script>
+        var items = document.querySelectorAll("a");
+        console.log(items);
+        items.forEach((item) => {
+          item.addEventListener("click", function () {
+            items.forEach((itm) => itm.classList.remove("active-menu"));
+            this.classList.add("active-menu");
+          });
+        });
+      </script>
+    </header>
+  </body>
+</html>
