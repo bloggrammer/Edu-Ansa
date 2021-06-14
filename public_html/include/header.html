@@ -108,7 +108,7 @@
     function setActiveMenu() {
       var aObj = document.getElementById("pri-nav").getElementsByTagName("a");
       for (var i = 0; i < aObj.length; i++) {
-        if (document.location.href == aObj[i].href) {
+        if (aObj[i].href === document.location.href) {
           aObj[i].className = "active-menu";
         }
       }
