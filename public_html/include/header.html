@@ -18,9 +18,9 @@
           <a href="index.html">Home</a>
         </li>
         <li><a href="post-template.html">Blog</a></li>
-        <li><a href="#">Resources</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">FAQ</a></li>
+        <li><a href="about.html">Resources</a></li>
+        <li><a href="blog.html">Products</a></li>
+        <li><a href="contact.html">FAQ</a></li>
       </ul>
     </nav>
     <div class="f-wrapper site-search">
@@ -79,13 +79,13 @@
     </nav>
   </div>
   <script>
-    var items = document.querySelectorAll("a");
-    items.forEach((item) => {
-      item.addEventListener("click", function () {
-        items.forEach((itm) => itm.classList.remove("active-menu"));
-        this.classList.add("active-menu");
-      });
-    });
+    // var items = document.querySelectorAll("a");
+    // items.forEach((item) => {
+    //   item.addEventListener("click", function () {
+    //     items.forEach((itm) => itm.classList.remove("active-menu"));
+    //     this.classList.add("active-menu");
+    //   });
+    // });
 
     // document.addEventListener("DOMContentLoaded", function (event) {
     //   var element = document.getElementById("pri-nav").querySelectorAll("a");
@@ -104,5 +104,15 @@
     //     });
     //   }
     // });
+
+    function setActiveMenu() {
+      var aObj = document.getElementById("pri-nav").getElementsByTagName("a");
+      for (var i = 0; i < aObj.length; i++) {
+        if (document.location.href == aObj[i].href) {
+          aObj[i].className = "active-menu";
+        }
+      }
+    }
+    window.onload = setActiveMenu;
   </script>
 </header>
