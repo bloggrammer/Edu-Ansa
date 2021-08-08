@@ -24,7 +24,7 @@ Even though EduAnsa is a static website, it is build with reusable HTML componen
 
 - [x] HTML
 - [x] CSS (SCSS)
-- [x] Vanilla Javascript
+- [x] Vanilla JavaScript
 
 ## Sample Pages
 
