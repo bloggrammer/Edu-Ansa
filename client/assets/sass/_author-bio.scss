@@ -1,0 +1,29 @@
+#author-bio {
+  font-size: 13px;
+  box-sizing: inherit;
+  background: url("/assets/img/honeycomb.png") $soft-orange;
+  border: 1px solid $dove-gray;
+  box-shadow: 0 0 3px $dark-charcoal;
+
+  > h4 {
+    box-sizing: inherit;
+    border: none;
+    margin: 0;
+    outline: 0;
+    font-size: 18px;
+    background-image: inherit;
+    background-color: $orange-color;
+    color: $dark-gray;
+    padding: 4px 8px;
+    text-align: center;
+    text-shadow: 0 1px 1px $dove-gray;
+    text-transform: uppercase;
+  }
+  .author-avatar {
+    box-sizing: inherit;
+    padding: 4px;
+  }
+  .author-description {
+    flex: 1;
+  }
+}

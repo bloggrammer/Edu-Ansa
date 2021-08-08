@@ -1,0 +1,12 @@
+@mixin flexRightMax($leftMargin) {
+  flex: 1;
+  margin-left: $leftMargin;
+}
+@mixin flexRightMaxDP($leftMargin) {
+  > div {
+    @include flexRightMax($leftMargin);
+  }
+  p {
+    font-size: 9pt;
+  }
+}

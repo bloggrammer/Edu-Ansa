@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/img/favicon.ico" />
+    <link rel="apple-touch-icon" href="assets/img/favicon.ico" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <title>EduAnsa</title>
+
+    <style>
+      .tabset > input[type="radio"] {
+        position: absolute;
+        left: -200vw;
+      }
+
+      .tabset .tab-panel {
+        display: none;
+      }
+
+      .tabset
+        > input:first-child:checked
+        ~ .tab-panels
+        > .tab-panel:first-child,
+      .tabset
+        > input:nth-child(3):checked
+        ~ .tab-panels
+        > .tab-panel:nth-child(2),
+      .tabset
+        > input:nth-child(5):checked
+        ~ .tab-panels
+        > .tab-panel:nth-child(3),
+      .tabset
+        > input:nth-child(7):checked
+        ~ .tab-panels
+        > .tab-panel:nth-child(4),
+      .tabset
+        > input:nth-child(9):checked
+        ~ .tab-panels
+        > .tab-panel:nth-child(5),
+      .tabset
+        > input:nth-child(11):checked
+        ~ .tab-panels
+        > .tab-panel:nth-child(6) {
+        display: block;
+      }
+
+      .tabset > label {
+        position: relative;
+        display: inline-block;
+        padding: 5px 15px 25px;
+        border: 1px solid transparent;
+        border-bottom: 0;
+        cursor: pointer;
+        font-weight: 600;
+      }
+
+      .tabset > label::after {
+        content: "";
+        position: absolute;
+        left: 15px;
+        bottom: 10px;
+        width: 22px;
+        height: 4px;
+        background: #8d8d8d;
+      }
+
+      .tabset > label:hover,
+      .tabset > input:focus + label {
+        color: #fd6608;
+      }
+
+      .tabset > label:hover::after,
+      .tabset > input:focus + label::after,
+      .tabset > input:checked + label::after {
+        background: #fd6608;
+      }
+
+      .tabset > input:checked + label {
+        border-color: #ccc;
+        border-bottom: 1px solid #fff;
+        margin-bottom: -1px;
+      }
+
+      .tab-panel {
+        padding: 15px 0;
+        border-top: 1px solid #ccc;
+      }
+
+      .tabset {
+        max-width: 65em;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <!--#include virtual="include/header.html" -->
+      <main>
+        <article class="f-wrapper b-post">
+          <div id="post">
+            <section class="f-wrapper hm-sec">
+              <div class="tabset">
+                <!-- Tab 1 -->
+                <input
+                  type="radio"
+                  name="tabset"
+                  id="tab1"
+                  aria-controls="marzen"
+                  checked
+                />
+                <label for="tab1">Internship</label>
+                <!-- Tab 2 -->
+                <input
+                  type="radio"
+                  name="tabset"
+                  id="tab2"
+                  aria-controls="rauchbier"
+                />
+                <label for="tab2">Scholarship</label>
+                <!-- Tab 3 -->
+                <input
+                  type="radio"
+                  name="tabset"
+                  id="tab3"
+                  aria-controls="dunkles"
+                />
+                <label for="tab3">ProJects</label>
+                <!-- Tab 4 -->
+                <input
+                  type="radio"
+                  name="tabset"
+                  id="tab4"
+                  aria-controls="ja"
+                />
+                <label for="tab4">ProJects</label>
+
+                <div class="tab-panels">
+                  <section id="marzen" class="tab-panel">                    
+                    <div class="f-wrapper">
+                        <img class="ft-post__img" src="./assets/img/NUnit.png" alt="" />
+                        <div class="ft-post">
+                          <a href="">How to Land Your Dream Internship</a>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptatum ratione soluta.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="f-wrapper">
+                        <img class="ft-post__img" src="./assets/img/NUnit.png" alt="" />
+                        <div class="ft-post">
+                          <a href="">How to Land Your Dream Internship</a>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptatum ratione soluta.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptatum ratione soluta.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="f-wrapper">
+                        <img class="ft-post__img" src="./assets/img/NUnit.png" alt="" />
+                        <div class="ft-post">
+                          <a href="">How to Land Your Dream Internship</a>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptatum ratione soluta.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptatum ratione soluta.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="f-wrapper">
+                        <img class="ft-post__img" src="./assets/img/NUnit.png" alt="" />
+                        <div class="ft-post">
+                          <a href="">How to Land Your Dream Internship</a>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptatum ratione soluta.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptatum ratione soluta.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="f-wrapper">
+                        <img class="ft-post__img" src="./assets/img/NUnit.png" alt="" />
+                        <div class="ft-post">
+                          <a href="">How to Land Your Dream Internship</a>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptatum ratione soluta.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptatum ratione soluta.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="f-wrapper">
+                        <img class="ft-post__img" src="./assets/img/NUnit.png" alt="" />
+                        <div class="ft-post">
+                          <a href="">How to Land Your Dream Internship</a>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptatum ratione soluta.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptatum ratione soluta.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="f-wrapper">
+                        <img class="ft-post__img" src="./assets/img/NUnit.png" alt="" />
+                        <div class="ft-post">
+                          <a href="">How to Land Your Dream Internship</a>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptatum ratione soluta.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptatum ratione soluta.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="f-wrapper">
+                        <img class="ft-post__img" src="./assets/img/NUnit.png" alt="" />
+                        <div class="ft-post">
+                          <a href="">How to Land Your Dream Internship</a>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptatum ratione soluta.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptatum ratione soluta.
+                          </p>
+                        </div>
+                      </div>
+                  <!--#include virtual="include/intern-pagination.html" -->
+                  </section>
+                  <section id="rauchbier" class="tab-panel">
+                    <div class="f-wrapper">
+                        <img class="ft-post__img" src="./assets/img/NUnit.png" alt="" />
+                        <div class="ft-post">
+                          <a href="">How to Land Your Dream Internship</a>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptatum ratione soluta.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptatum ratione soluta.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="f-wrapper">
+                        <img class="ft-post__img" src="./assets/img/NUnit.png" alt="" />
+                        <div class="ft-post">
+                          <a href="">How to Land Your Dream Internship</a>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptatum ratione soluta.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptatum ratione soluta.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="f-wrapper">
+                        <img class="ft-post__img" src="./assets/img/NUnit.png" alt="" />
+                        <div class="ft-post">
+                          <a href="">How to Land Your Dream Internship</a>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptatum ratione soluta.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptatum ratione soluta.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="f-wrapper">
+                        <img class="ft-post__img" src="./assets/img/NUnit.png" alt="" />
+                        <div class="ft-post">
+                          <a href="">How to Land Your Dream Internship</a>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptatum ratione soluta.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptatum ratione soluta.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="f-wrapper">
+                  </section>
+                  <section id="dunkles" class="tab-panel">
+                    <div class="f-wrapper">
+                        <img class="ft-post__img" src="./assets/img/NUnit.png" alt="" />
+                        <div class="ft-post">
+                          <a href="">How to Land Your Dream Internship</a>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptatum ratione soluta.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptatum ratione soluta.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="f-wrapper">
+                        <img class="ft-post__img" src="./assets/img/NUnit.png" alt="" />
+                        <div class="ft-post">
+                          <a href="">How to Land Your Dream Internship</a>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptatum ratione soluta.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptatum ratione soluta.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="f-wrapper">
+                        <img class="ft-post__img" src="./assets/img/NUnit.png" alt="" />
+                        <div class="ft-post">
+                          <a href="">How to Land Your Dream Internship</a>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptatum ratione soluta.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptatum ratione soluta.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="f-wrapper">
+                        <img class="ft-post__img" src="./assets/img/NUnit.png" alt="" />
+                        <div class="ft-post">
+                          <a href="">How to Land Your Dream Internship</a>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptatum ratione soluta.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptatum ratione soluta.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="f-wrapper">
+                  </section>
+                  <section id="ja" class="tab-panel">
+                    <div class="f-wrapper">
+                        <img class="ft-post__img" src="./assets/img/NUnit.png" alt="" />
+                        <div class="ft-post">
+                          <a href="">How to Land Your Dream Internship</a>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptatum ratione soluta.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptatum ratione soluta.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="f-wrapper">
+                        <img class="ft-post__img" src="./assets/img/NUnit.png" alt="" />
+                        <div class="ft-post">
+                          <a href="">How to Land Your Dream Internship</a>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptatum ratione soluta.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptatum ratione soluta.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="f-wrapper">
+                        <img class="ft-post__img" src="./assets/img/NUnit.png" alt="" />
+                        <div class="ft-post">
+                          <a href="">How to Land Your Dream Internship</a>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptatum ratione soluta.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptatum ratione soluta.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="f-wrapper">
+                        <img class="ft-post__img" src="./assets/img/NUnit.png" alt="" />
+                        <div class="ft-post">
+                          <a href="">How to Land Your Dream Internship</a>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptatum ratione soluta.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptatum ratione soluta.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="f-wrapper">
+                  </section>
+                </div>
+              </div>
+            </section>
+           
+            <div class="hl"></div>
+            <section class="f-wrapper hm-sec">
+              <img src="./assets/img/banner/300x250.jpg" alt="" />
+              <div>
+                <img
+                  style="display: block"
+                  src="./assets/img/banner/300x250.jpg"
+                  alt=""
+                />
+              </div>
+            </section>
+          </div>
+          <div class="vl"></div>
+          <!--#include virtual="include/right-sidebar--home.html" -->
+        </article>
+      </main>
+      <!--#include virtual="include/footer.html" -->
+    </div>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

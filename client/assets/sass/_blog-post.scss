@@ -1,0 +1,17 @@
+.b-post {
+  justify-content: space-between;
+  box-sizing: inherit;
+  background-color: $white-color;
+  #post {
+    flex: 1;
+    > section {
+      margin: 8px;
+    }
+    span {
+      position: relative;
+      top: 2px;
+      left: 22.89rem;
+      font-size: 12px !important;
+    }
+  }
+}

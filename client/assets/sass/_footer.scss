@@ -1,0 +1,21 @@
+footer {
+  line-height: 1.5;
+  color: $white-color;
+  text-shadow: 1px 1px 1px $primary-color;
+  box-sizing: inherit;
+  min-height: 10px;
+  background-color: $light-black;
+
+  .footer-nav .menu-items li a {
+    border-right: $gray-color 1px solid;
+    font-size: 16px;
+    padding: 0 13px;
+  }
+
+  p {
+    flex: 1;
+    height: 2.5em;
+    line-height: 2.5em;
+    margin: auto 1em;
+  }
+}

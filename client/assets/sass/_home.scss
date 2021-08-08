@@ -1,0 +1,31 @@
+.f-wrapper {
+  & .hm-sec {
+    @include flexRightMaxDP(1.5em);
+    & .ft-posts {
+      flex: 1 !important;
+    }
+    & #wht-new a {
+      font-size: 10pt;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      display: inline-block;
+      width: 250px;
+      vertical-align: text-bottom;
+    }
+  }
+  & .ft-post {
+    @include flexRightMax(0.5em);
+    a {
+      font-size: 9pt;
+    }
+  }
+  & .ft-post__img {
+    margin-bottom: 0.5em;
+    border-collapse: collapse;
+    width: 64px;
+    height: 64px;
+    border: none;
+    box-shadow: 3px 3px 3px var(--gray);
+  }
+}
