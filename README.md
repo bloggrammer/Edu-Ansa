@@ -1,25 +1,31 @@
-# eduansa-website
+# EduAnsa
 
-A static website for eduansa.com
+EduAnsa is a static website developed as a go-to resource for students.
 
-This static website required the Apache server to run smoothly because the partial HTML files are included using the `Apache server INCLUDE` statement written in the `.htaccess` file.
+Even though EduAnsa is a static website, it is build with reusable HTML components (partial HTML files) to avoid HTML duplications. These partial HTML files are combined together using the `Apache server INCLUDE` statement written in the `.htaccess` file.
+
+ ```html
+     <body>
+      <div id="container">
+        <!--#include virtual="include/header.html" -->
+        <main>
+          <article>
+            <!--#include virtual="include/author-bio.html" -->
+            <!--#include virtual="include/right-sidebar.html" -->
+          </article>
+        </main>
+        <!--#include virtual="include/footer.html" -->
+      </div>
+      <script src="js/main.js"></script>
+    </body>
+   ``` 
+## Tech Stack
+- [x] HTML
+- [x] CSS (SCSS)
+- [x] Vanilla Javascript
+
+## Sample Pages
 
 ![include](docs/include.PNG)
 
-_Apache server INCLUDE_
-
-![site header](docs/header.PNG)
-
-_Site Header with Primary Navigation_
-
-![site footer](docs/Footer.PNG)
-
-_Site Footer with Secondary Navigation_
-
-![site home page](docs/Homepage.PNG)
-
-_Site Home page_
-
-![blog post template](docs/BlogTemplate.png)
-
-_Site Home page_
+_Sample Home Page_
